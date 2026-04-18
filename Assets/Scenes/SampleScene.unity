@@ -47749,11 +47749,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: af1ac26269830d347859c2c45ef72494, type: 3}
---- !u!1 &760499209 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1811686274572396, guid: af1ac26269830d347859c2c45ef72494, type: 3}
-  m_PrefabInstance: {fileID: 760499208}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &761693931 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4903173184963024, guid: af1ac26269830d347859c2c45ef72494, type: 3}
@@ -79453,19 +79448,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4903173184963024, guid: af1ac26269830d347859c2c45ef72494, type: 3}
   m_PrefabInstance: {fileID: 760499208}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1292171330
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 760499209}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8e9e827b340f2894b97c60caba3a4787, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  velocidad: 3
 --- !u!4 &1292979746 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4903173184963024, guid: af1ac26269830d347859c2c45ef72494, type: 3}
@@ -123340,15 +123322,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9109624366790321416, guid: 376554a807351f341956cfc0782ecf01, type: 3}
       propertyPath: m_LocalScale.x
-      value: 1.5
+      value: 1.2
       objectReference: {fileID: 0}
     - target: {fileID: 9109624366790321416, guid: 376554a807351f341956cfc0782ecf01, type: 3}
       propertyPath: m_LocalScale.y
-      value: 1.5
+      value: 1.2
       objectReference: {fileID: 0}
     - target: {fileID: 9109624366790321416, guid: 376554a807351f341956cfc0782ecf01, type: 3}
       propertyPath: m_LocalScale.z
-      value: 1.5
+      value: 1.2
       objectReference: {fileID: 0}
     - target: {fileID: 9109624366790321416, guid: 376554a807351f341956cfc0782ecf01, type: 3}
       propertyPath: m_LocalPosition.x

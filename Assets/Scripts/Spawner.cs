@@ -7,7 +7,6 @@ public class Spawner : MonoBehaviour
     public GameObject dianaPrefab;
     public float tiempoEntreSpawns = 2f;
     public int cantidadDianas = 6;
-    public GunGameManager manager;
 
     void Start()
     {
@@ -20,15 +19,12 @@ public class Spawner : MonoBehaviour
 
         for (int i = 0; i < cantidadDianas; i++)
         {
-            // Cada diana spawnea un poco más a la derecha
             Vector3 posicion = transform.position + new Vector3(i * 5f, 0, 0);
-
             GameObject diana = Instantiate(dianaPrefab, posicion, transform.rotation);
-            diana.GetComponent<MovimientoDianas>().manager = manager;
             listadianas.Add(diana);
 
-            // Actualiza el array en cada spawn
-            manager.dianas = listadianas.ToArray();
+            // Actualiza el array en el manager usando el Singleton
+            GunGameManager.instance.dianas = listadianas.ToArray();
 
             yield return null;
         }

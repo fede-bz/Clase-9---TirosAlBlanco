@@ -5,7 +5,6 @@ using UnityEngine;
 public class MovimientoDianas : MonoBehaviour
 {
     public float velocidad = 3f;
-    public GunGameManager manager;
 
     void Update()
     {
@@ -13,11 +12,8 @@ public class MovimientoDianas : MonoBehaviour
 
         if (transform.position.x < -15f)
         {
-            Debug.Log("Objeto que se desactiva: " + gameObject.name);
             gameObject.SetActive(false);
-
-            if (manager != null)
-                manager.CheckFinish();
+            GunGameManager.instance.CheckFinish();
         }
     }
 }

@@ -5,7 +5,6 @@ using UnityEngine;
 public class Proyectil : MonoBehaviour
 {
     public float velocidad = 10f;
-    public GunGameManager manager;
 
     void Update()
     {
@@ -19,8 +18,8 @@ public class Proyectil : MonoBehaviour
             GameObject dianaRaiz = otro.transform.root.gameObject;
             dianaRaiz.SetActive(false);
 
-            manager.DianaRota();    // Cuenta la diana rota
-            manager.CheckFinish();  // Verifica si terminó el juego
+            GunGameManager.instance.DianaRota();
+            GunGameManager.instance.CheckFinish();
 
             Destroy(gameObject);
         }

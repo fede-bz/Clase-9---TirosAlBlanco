@@ -4,8 +4,30 @@ using UnityEngine;
 
 public class GunGameManager : MonoBehaviour
 {
+    public static GunGameManager instance;
+
     public GameObject[] dianas;
     private int rotasPorDisparo = 0;
+
+    public int balasMaximas = 10;
+    private int balasRestantes;
+
+    void Awake()
+    {
+        instance = this;
+        balasRestantes = balasMaximas;
+    }
+
+    public bool PuedeDisparar()
+    {
+        return balasRestantes > 0;
+    }
+
+    public void GastarBala()
+    {
+        balasRestantes--;
+        Debug.Log("Balas restantes: " + balasRestantes);
+    }
 
     public void DianaRota()
     {
